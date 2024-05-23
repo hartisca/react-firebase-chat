@@ -3,12 +3,5 @@
   display: flex;
   flex-direction: column;
 
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: rgba(17, 25, 40, 0.5);
-  }
 }
