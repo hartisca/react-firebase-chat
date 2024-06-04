@@ -11,7 +11,7 @@ import { useChatStore } from './lib/chatStore'
 
 const App = () => {
 
-  const { chatId, user } = useChatStore()
+  const { user } = useChatStore()
   const { currentUser, isLoading, fetchUserInfo } = useUserStore()
 
   useEffect(() => {
