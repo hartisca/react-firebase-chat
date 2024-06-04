@@ -7,9 +7,11 @@ import Notification from './components/notification/Notification'
 import { useEffect } from 'react'
 import { auth } from "./lib/firebase"
 import { useUserStore } from "./lib/userStore"
+import { useChatStore } from './lib/chatStore'
 
 const App = () => {
 
+  const { chatId, user } = useChatStore()
   const { currentUser, isLoading, fetchUserInfo } = useUserStore()
 
   useEffect(() => {
@@ -26,11 +28,11 @@ const App = () => {
   
   return (
     <div className='container'>
-      { currentUser? (
+      { currentUser ? (
           <>
             <List />  
             <Chat />
-            <Detail />                  
+            {user && <Detail />}
           </>
         ) : (
           <Login />

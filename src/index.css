@@ -23,6 +23,8 @@ body {
   border-radius: 12px;
   border: 1px solid rgba(17, 25, 40);
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {

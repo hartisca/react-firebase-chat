@@ -117,12 +117,11 @@ const Chat = () => {
 
   return (
     <div className="chat">
-      <div className="top">
+      {user ? (<div className="top">
         <div className="user">
-          <img src={user?.avatar || "./avatar.png"} alt="" />
+          <img src={ user?.avatar || "./avatar.png" } alt="" />
           <div className="texts">
-            <span>{user?.username}</span>
-            <p>Lorem ipsum dolor, sit amet.</p>
+            <span>{ user?.username }</span>            
           </div>
         </div>
         <div className="icons">
@@ -130,7 +129,7 @@ const Chat = () => {
           <img src="./video.png" alt="" />
           <img src="./info.png" alt="" />
         </div>
-      </div>
+      </div>) : (<div></div>)}
       <div className="center">
         {chat?.messages?.map((message) => (
           <div
