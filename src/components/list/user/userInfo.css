@@ -21,7 +21,7 @@
   .myState{
     font-size: 13px;
     font-style: italic;
-    color: #a5a5a5;
+    color: rgba(221, 221, 221, 0.925);
   }
 }
 .icons{
@@ -39,7 +39,7 @@
   width: max-content;
   height: max-content;
   padding: 30px;
-  background-color: rgba(17, 25, 40, 0.712);
+  background-color: rgba(43, 68, 110, 0.712);
   border-radius: 10px;
   position: absolute;
   top: 0;
@@ -57,7 +57,8 @@
     border-radius: 10px;
     border: none;
     outline: none;
-  }
+    
+  }  
 
   button{
     padding: 20px;

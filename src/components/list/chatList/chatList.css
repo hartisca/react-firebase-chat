@@ -10,7 +10,7 @@
 
     .searchBar{
       flex: 1;
-      background-color: rgba(17, 25, 40, 0.5);
+      background-color: rgba(31, 44, 68, 0.5);
       display: flex;
       align-items: center;
       gap: 20px;
@@ -21,9 +21,12 @@
         background-color: transparent;
         border: none;
         outline: none;
-        color: aquamarine;
+        color: white;
         
-        flex: 1;
+        flex: 1;        
+      }
+      input::placeholder{
+        color: rgba(221, 221, 221, 0.925);
       }
 
       img{
